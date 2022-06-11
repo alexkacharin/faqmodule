@@ -1,0 +1,29 @@
+{
+  "name": "alexkacharin/yii2-faqmodule",
+  "description": "Yii2 FAQ extension",
+  "type": "yii2-extension",
+  "keywords": [
+    "yii2",
+    "extension",
+    "faq"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "alexkacharin",
+      "email": "a.kacharin5@gmail.com"
+    }
+  ],
+   "minimum-stability": "stable",
+  "require": {
+    "yiisoft/yii2": "~2.0.0"   
+  },
+   "extra": {
+        "bootstrap": "alexkacharin\\faqmodule\\Bootstrap"
+    },
+  "autoload": {
+    "psr-4": {
+      "alexkacharin\\faqmodule\\": "src"
+    }
+  }  
+}

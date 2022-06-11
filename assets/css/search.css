@@ -1,0 +1,27 @@
+
+.d7:after {content:""; clear:both; display:table}
+.d7 form {
+    width: auto;
+    float: left;
+    margin-right: 30px;
+}
+.d7 input {
+    width: 60%;
+    height: 42px;
+    border: 2px solid #324b4e;
+    outline: none;
+    position: relative;
+    transition: .3s linear;
+}
+.d7 button
+{
+    width: 20%;
+    padding: 8px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
