@@ -22,6 +22,7 @@ class CategoryController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::class,
+                'only' => ['index','create','update','delete'],
                 'denyCallback' => function () {
                     die('Доступ запрещен!');
                 },
