@@ -151,7 +151,7 @@ class FaqArticle extends \yii\db\ActiveRecord
         return $search;
     }
 
-    public function createHtml($articles,$url,$pagination)
+    public function createHtml($articles,$url)
     {
          $return = ' <code class="php">
             <div class="code-ajax">
