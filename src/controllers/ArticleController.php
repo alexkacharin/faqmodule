@@ -21,7 +21,25 @@ class ArticleController extends Controller
     /**
      * @inheritDoc
      */
-    
+     public function behaviors()
+    {
+        return [
+            'access' => [
+                'class' => AccessControl::class,
+                'only' => ['index','create','update','delete','update-status','archive'],
+                'denyCallback' => function () {
+                    die('Доступ запрещен!');
+                },
+                'rules' => [
+                    [
+                        'allow'   => true,
+                        'roles'   => Module::accessRoles,
+                    ],
+                ],
+            ],
+        ];
+
+    }
 
     /**
      * Lists all FaqArticle models.
