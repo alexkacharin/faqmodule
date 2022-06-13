@@ -3,7 +3,7 @@
 namespace alexkacharin\faqmodule\controllers;
 use alexkacharin\faqmodule\models\FaqCategory;
 use alexkacharin\faqmodule\Module;
-use app\kacharin\faq\models\search\FaqCategorySearch;
+use alexkacharin\faqmodule\models\search\FaqCategorySearch;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
