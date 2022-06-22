@@ -196,7 +196,9 @@ class ArticleController extends Controller
             ]));
     }
     public function actionDeleted($id,$url) {
-        Yii::$app->db->createCommand('DELETE FROM faq_article WHERE id = :id',['id' => $id])->queryAll();
+        $model = $this->findModel($id);
+        $model->clearCurrentCategoryies();
+        $this->findModel($id)->delete();
         return $this->redirect($url);
     }
 }
