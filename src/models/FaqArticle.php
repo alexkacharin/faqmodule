@@ -112,7 +112,7 @@ class FaqArticle extends \yii\db\ActiveRecord
     
     public function clearCurrentCategoryies()
     {
-     Yii::$app->db->createCommand(' DELETE FROM faq_article_to_faq_categories WHERE article_id = :id',['id' => $this->id])->queryAll();
+     Yii::$app->db->createCommand(' DELETE FROM faq_article_to_faq_categories WHERE article_id = :id',['id' => $this->id])->execute();
     }
 
     public function save($runValidation = true,$attributeNames = null)
